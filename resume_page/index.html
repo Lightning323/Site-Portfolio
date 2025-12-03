@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume & Contact - Samuel Walker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/Website Logo.png" alt="Samuel Walker Logo" class="logo-img">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html" class="active">Resume/Contact</a></li>
+                    <li><a href="https://github.com/zipCoder933" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/samuel-walker" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
 
+    <!-- 主内容区 -->
+    <main class="resume-page">
+        <div class="container">
+            <h2 class="page-title">Resume & Contact Information</h2>
+            
+            <div class="resume-grid">
+                <!-- 联系信息 -->
+                <section class="contact-info">
+                    <h3>Contact Me</h3>
+                    <ul class="contact-details">
+                        <li><i class="fas fa-envelope"></i> sam.p.w524@gmail.com</li>
+                        <li><i class="fab fa-github"></i> <a href="https://github.com/zipCoder933" target="_blank" rel="noopener">github.com/zipCoder933</a></li>
+                        <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/samuel-walker" target="_blank" rel="noopener">linkedin.com/in/samuel-walker</a></li>
+                        <li><i class="fas fa-globe"></i> <a href="https://yourwebsite.com" target="_blank" rel="noopener">yourwebsite.com</a></li>
+                    </ul>
+                    
+                    <div class="resume-download">
+                        <a href="#" class="btn btn-resume"><i class="fas fa-download"></i> Download Resume</a>
+                    </div>
+                </section>
+
+                <!-- 个人简介 -->
+                <section class="summary">
+                    <h3>Summary</h3>
+                    <p>I am a passionate programmer, maker, and engineer, who enjoys the artistic side just as much as the technical side of projects. Besides programming, I have worked with robotics, AI, 3D printing and even art!</p>
+                    <p>I have worked with many different programming languages in the past. I have programmed Java by far the most. Most of the projects I have made in the past have been made with Java.</p>
+                </section>
+
+                <!-- 技能 -->
+                <section class="skills">
+                    <h3>Skills</h3>
+                    
+                    <div class="skills-category">
+                        <h4>Languages</h4>
+                        <ul class="skills-list">
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C#</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-category">
+                        <h4>Tools & Frameworks</h4>
+                        <ul class="skills-list">
+                            <li>Godot</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Docker</li>
+                            <li>LWJGL OpenGL</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-category">
+                        <h4>Other</h4>
+                        <ul class="skills-list">
+                            <li>Linux</li>
+                            <li>Git</li>
+                            <li>Game Development</li>
+                            <li>Modding</li>
+                            <li>3D Printing</li>
+                            <li>Robotics</li>
+                            <li>AI</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 项目经历 -->
+                <section class="resume-projects">
+                    <h3>Key Projects</h3>
+                    
+                    <div class="resume-project">
+                        <h4>Xbuilders</h4>
+                        <p>An open source voxel game based built on Java and OpenGL. Inspired by Minecraft, this was the most time consuming project I ever did. Includes complete lighting engine, liquid propagation, creative building tools, survival mechanics, and LAN multiplayer.</p>
+                    </div>
+
+                    <div class="resume-project">
+                        <h4>Cogni-Crawl</h4>
+                        <p>A 3D flashcard memorization game built using Godot. Includes a complete JSON data driven system, so you can import any set of flashcards you want and Cogni-crawl creates a complete dungeon crawler.</p>
+                    </div>
+
+                    <div class="resume-project">
+                        <h4>Minecraft Mod Series</h4>
+                        <p>Developed multiple mods for Minecraft including jetpack expansions, performance optimizations, creative mode tweaks, and utility tools for modpack management.</p>
+                    </div>
+                </section>
+
+                <!-- 额外经历 -->
+                <section class="additional">
+                    <h3>Additional Experience</h3>
+                    <ul>
+                        <li>Participated in the 2025 BYUI hackathon</li>
+                        <li>Open source contributor to various game development projects</li>
+                        <li>Created educational content for programming and game development tutorials</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Samuel Walker. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/zipCoder933" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/samuel-walker" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端菜单切换
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
