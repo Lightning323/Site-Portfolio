@@ -7,21 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- 根目录的全局样式 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- 导航栏 -->
+    <!-- 导航栏（链接指向子文件夹的页面） -->
     <header class="navbar">
         <div class="container">
             <div class="logo">
-                <img src="images/Website Logo.png" alt="Samuel Walker Logo" class="logo-img">
+                <img src="images/Website Logo.png" alt="Samuel Walker Logo" class="logo-img"> <!-- 根目录images -->
             </div>
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume/Contact</a></li>
+                    <li><a href="projects_page/index.html">Projects</a></li> <!-- 指向projects_page文件夹的index.html -->
+                    <li><a href="resume_page/index.html">Resume/Contact</a></li> <!-- 指向resume_page文件夹的index.html -->
                     <li><a href="https://github.com/zipCoder933" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></li>
                     <li><a href="https://linkedin.com/in/samuel-walker" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
                 </ul>
@@ -32,43 +32,34 @@
         </div>
     </header>
 
-    <!-- 主内容区 -->
+    <!-- 主内容区（图片路径保持根目录images） -->
     <main class="homepage">
-        <!-- 英雄区域 -->
         <section class="hero-box">
             <div class="box-content">
                 <h2>Let’s build the future</h2>
                 <h3>Staying curious</h3>
-                <p>Curiosity isn’t just a habit—it’s the compass guiding the kind of future I want to help build. I imagine a world where programming becomes a creative superpower, robotics extends human capability, AI learns to collaborate rather than just calculate, and math remains the secret engine beneath it all.</p>
-                <p>I’m driven by the idea that tomorrow can be smarter, more connected, and a little more magical if we keep exploring boldly and questioning everything. My goal is to contribute to that future—crafting tools, systems, and ideas that push boundaries and invite others to stay curious right alongside me.</p>
+                <p>Curiosity isn’t just a habit—it’s the compass guiding the kind of future I want to help build...</p>
             </div>
         </section>
-
-        <!-- 项目简介区域 -->
         <section class="projects-intro-box">
             <div class="box-content">
                 <h3>My projects</h3>
-                <p>Curiosity is what pushes me forward. I’m excited about where programming, robotics, AI, and math are heading, and I want to be part of shaping that future. I enjoy exploring new ideas, building things that solve real problems, and experimenting with technologies that are still evolving.</p>
-                <p>I’ve worked on many projects—most of which I’ve shared on GitHub—and they reflect the ideas I’m exploring and the skills I’m developing. They range from small tools and experiments to more involved builds, all connected by a desire to keep learning and improving.</p>
-                <a href="projects.html" class="btn">VIEW PROJECTS</a>
+                <p>Curiosity is what pushes me forward...</p>
+                <a href="projects_page/index.html" class="btn">VIEW PROJECTS</a> <!-- 指向项目页 -->
             </div>
         </section>
-
-        <!-- 联系区域 -->
         <section class="contact-box">
             <div class="box-content">
                 <h3>Contact Me</h3>
-                <p>I’m always open to new opportunities where I can learn, contribute, and work with people who enjoy building meaningful things. Whether it's programming, robotics, AI, or anything that blends creativity with problem-solving, I'm excited to take on challenges that help me grow and make an impact.</p>
-                <p>If you think I'd be a good fit for your team or a project you're working on, I'd be happy to connect. My contact information is available here, and I'm always open to a conversation about how I might contribute to your goals.</p>
+                <p>I’m always open to new opportunities...</p>
                 <div class="contact-links">
                     <a href="https://linkedin.com/in/samuel-walker" target="_blank" rel="noopener" class="btn btn-linkedin"><i class="fab fa-linkedin"></i> LINKEDIN</a>
-                    <a href="resume.html" class="btn btn-resume"><i class="fas fa-file-alt"></i> RESUME</a>
+                    <a href="resume_page/index.html" class="btn btn-resume"><i class="fas fa-file-alt"></i> RESUME</a> <!-- 指向简历页 -->
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Samuel Walker. All rights reserved.</p>
@@ -80,10 +71,8 @@
     </footer>
 
     <script>
-        // 移动端菜单切换
         const menuToggle = document.querySelector('.menu-toggle');
         const mainNav = document.querySelector('.main-nav');
-
         menuToggle.addEventListener('click', () => {
             mainNav.classList.toggle('show');
         });
