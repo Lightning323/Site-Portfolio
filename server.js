@@ -26,6 +26,10 @@ router.get('/resume', (req, res) => {
     res.render('resume-page');
 });
 
+router.use((req, res) => {
+  res.status(404).render('404'); // Render a 404.ejs or 404.pug page
+});
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
