@@ -1,0 +1,71 @@
+<!-- 导航栏（链接指向子文件夹的页面） -->
+<header id="header" class="navbar">
+  <div class="container">
+    <div class="logo">
+      <img
+        src="images/Website Logo.png"
+        alt="Samuel Walker Logo"
+        class="logo-img"
+      />
+      <!-- 根目录images -->
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="projects">Projects</a></li>
+        <!-- 指向projects_page文件夹的index.html -->
+        <li><a href="resume">Resume/Contact</a></li>
+        <!-- 指向resume_page文件夹的index.html -->
+        <li>
+          <a
+            href="https://github.com/Lightning323"
+            target="_blank"
+            rel="noopener"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://linkedin.com/in/samuel-walker"
+            target="_blank"
+            rel="noopener"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</header>
+<script>
+  $(document).ready(function () {
+    // Get the current path, e.g., "/projects" or "/resume"
+    var path = window.location.pathname;
+    console.log(path);
+
+    // Normalize the path by removing trailing slash
+    if (path !== "/") {
+      path = path.replace(/\/$/, "");
+    }
+
+    // Loop through each nav link
+    $(".main-nav a").each(function () {
+      var href = $(this).attr("href");
+      console.log(href);
+
+      // Normalize href
+      if (href !== "/") {
+        href = href.replace(/\/$/, "");
+      }
+
+      // Check if link matches the current path
+      if (href === path || href === path.substring(1) || (href === "/" && path === "/")) {
+        $(this).addClass("active"); // Highlight the link
+      } else {
+        $(this).removeClass("active"); // Remove active from others
+      }
+    });
+  });
+</script>

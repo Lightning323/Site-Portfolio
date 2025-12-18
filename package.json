@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "A Site to show off my portfolio",
+  "keywords": [
+    "website"
+  ],
+  "homepage": "https://github.com/Lightning323/Site-Portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/Lightning323/Site-Portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lightning323/Site-Portfolio.git"
+  },
+  "license": "ISC",
+  "author": "Lightning323",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1"
+  }
+}
