@@ -24,7 +24,7 @@ body {
     font-family: 'Source Sans 3', sans-serif;
     color: var(--dark);
     line-height: 1.6;
-    background-color: #fff;
+    background-color: black;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -117,6 +117,13 @@ a:hover {
     left: 0;
     width: 100%;
     z-index: 1000;
+    color:white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.opaque-nav{
+    background-color: white;
+    color: black;
 }
 
 .navbar .container {
@@ -142,7 +149,7 @@ a:hover {
 }
 
 .main-nav a {
-    color: #fff;
+    color: inherit;
     font-weight: 500;
     padding: 0.5rem 0;
     position: relative;
@@ -191,7 +198,22 @@ a:hover {
     z-index: 1;
 }
 
-.box-content h2,
+.box-content h1{
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 3em;
+    letter-spacing: 0.4em;
+    /* text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) */
+}
+
+.box-content h2{
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 3em;
+    /* text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) */
+}
+
+.box-content h1, h2,
 .box-content h3 {
     color: #fff;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -467,7 +489,6 @@ a:hover {
     background-color: var(--dark);
     color: #fff;
     padding: 2rem 0;
-    margin-top: 3rem;
 }
 
 .footer .container {
