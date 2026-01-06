@@ -22,7 +22,7 @@ html {
   height: 100%;
 }
 
-#header{
+#header {
   padding-bottom: 0;
 }
 
@@ -50,7 +50,7 @@ body {
 
 /* Let main expand to fill available space */
 main {
-  flex: 1 !important; 
+  flex: 1 !important;
 }
 
 h1,
@@ -192,8 +192,6 @@ a:hover {
   position: relative;
 }
 
-
-
 .main-nav a::after {
   content: "";
   position: absolute;
@@ -319,14 +317,14 @@ h2,
   margin-bottom: 4rem;
 }
 
-.project-footer{
-padding:10px;
+.project-footer {
+  padding: 10px;
 }
-.tech-badge{
-background-color: #4b4b4b;
-    border: 1px solid gray;
-    border-radius: 10px;
-    padding: 5px;
+.tech-badge {
+  background-color: #4b4b4b;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .project-card {
@@ -361,7 +359,7 @@ background-color: #4b4b4b;
   transform: translateY(-5px);
   /* border: 1px solid var(--primary);
    */
-   /* background-color: #2e2e2e; */
+  /* background-color: #2e2e2e; */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -392,8 +390,6 @@ background-color: #4b4b4b;
   width: 50%;
   padding: 2rem;
 }
-
-
 
 .section-title {
   font-size: 2rem;
@@ -584,8 +580,8 @@ background-color: #4b4b4b;
   margin: 0;
 
   font-style: italic;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
 }
 
 @media (max-width: 992px) {
@@ -607,9 +603,10 @@ background-color: #4b4b4b;
 @media (max-width: 768px) {
   .main-nav {
     position: fixed;
-    top: 70px;
+    top: 75px;
     left: -100%;
-    background-color: rgba(0, 0, 0, 0.85);
+
+    background-color: rgb(125 125 125 / 94%);
     width: 100%;
     height: calc(100vh - 70px);
     flex-direction: column;
@@ -625,6 +622,8 @@ background-color: #4b4b4b;
   .main-nav ul {
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    padding-top: 20px;
   }
 
   .main-nav li {
@@ -652,9 +651,7 @@ background-color: #4b4b4b;
     text-align: center;
     gap: 1rem;
   }
-}
 
-@media (max-width: 576px) {
   .project-image {
     height: 300px;
   }
@@ -673,5 +670,13 @@ background-color: #4b4b4b;
 
   .mods-grid {
     grid-template-columns: 1fr;
+  }
+
+  .opaque-nav {
+    background-color: #7d7d7d !important ;
+  }
+
+  .opaque-nav nav {
+    color: white;
   }
 }
