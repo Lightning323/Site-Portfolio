@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+3:wght@300;400;500&display=swap"
+  rel="stylesheet"
+/>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+<!-- Bootstrap CSS (make sure it's included in your head) -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+
+
+<link rel="stylesheet" href="/middlewares/public/styles.css" />
+<!-- 根目录的全局样式 -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+
+    <title>Samuel Walker - Portfolio</title>
+  </head>
+  <body>
+<!-- 导航栏（链接指向子文件夹的页面） -->
+<header id="header" class="navbar">
+  <div class="container">
+    <div class="logo">
+        <a href="/">
+      <img
+        src="/middlewares/public/images/Website Logo.png"
+        alt="Samuel Walker Logo"
+        class="logo-img"
+      /></a>
+      <!-- 根目录images -->
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/projects_page.html">Projects</a></li>
+        <!-- 指向projects_page文件夹的index.html -->
+        <li><a href="/resume_page.html">Resume/Contact</a></li>
+        <!-- 指向resume_page文件夹的index.html -->
+        <li>
+          <a
+            href="https://github.com/Lightning323"
+            target="_blank"
+            rel="noopener"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://linkedin.com/in/samuel-walker2"
+            target="_blank"
+            rel="noopener"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</header>
+<script>
+  $(document).ready(function () {
+    // Get the current path, e.g., "/projects" or "/resume"
+    var path = window.location.pathname;
+    console.log(path);
+
+    // Normalize the path by removing trailing slash
+    if (path !== "/") {
+      path = path.replace(/\/$/, "");
+    }
+
+    // Loop through each nav link
+    $(".main-nav a").each(function () {
+      var href = $(this).attr("href");
+      console.log(href);
+
+      // Normalize href
+      if (href !== "/") {
+        href = href.replace(/\/$/, "");
+      }
+
+      // Check if link matches the current path
+      if (href === path || href === path.substring(1) || (href === "/" && path === "/")) {
+        $(this).addClass("active"); // Highlight the link
+      } else {
+        $(this).removeClass("active"); // Remove active from others
+      }
+    });
+  });
+</script>
+
+
+    <!-- 主内容区（图片路径保持根目录images） -->
+    <main class="homepage">
+      <section class="hero-box">
+        <div class="box-content">
+          <h1>Let’s build the future</h1>
+          <h3>Staying curious</h3>
+          <p>
+            Curiosity isn’t just a habit—it’s the compass guiding the kind of
+            future I want to help build...
+          </p>
+        </div>
+      </section>
+      <section class="projects-intro-box">
+        <div class="box-content">
+          <h2>My projects</h2>
+          <p>Curiosity is what pushes me forward...</p>
+          <a href="projects_page/index.html" class="btn">VIEW PROJECTS</a>
+          <!-- 指向项目页 -->
+        </div>
+      </section>
+      <section class="contact-box">
+        <div class="box-content">
+          <h2>Contact Me</h2>
+          <p>I’m always open to new opportunities...</p>
+          <div class="contact-links">
+            <a
+              href="https://linkedin.com/in/samuel-walker2"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-linkedin"
+              ><i class="fab fa-linkedin"></i> LINKEDIN</a
+            >
+            <a href="/middlewares/public/resume.pdf" target="_blank" class="btn btn-resume"
+              ><i class="fas fa-file-alt"></i> RESUME</a
+            >
+            <!-- 指向简历页 -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Samuel Walker. All rights reserved.</p>
+        <div class="social-links">
+          <a
+            href="https://github.com/Lightning323"
+            target="_blank"
+            rel="noopener"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/samuel-walker2"
+            target="_blank"
+            rel="noopener"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(window).on("scroll", function () {
+        // console.log($(this).scrollTop());
+        if ($(this).scrollTop() > 50) {
+          $("#header").addClass("opaque-nav");
+        } else {
+          $("#header").removeClass("opaque-nav");
+        }
+      });
+
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mainNav = document.querySelector(".main-nav");
+      menuToggle.addEventListener("click", () => {
+        mainNav.classList.toggle("show");
+      });
+    </script>
+
+     <!-- Bootstrap JS (optional, for components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

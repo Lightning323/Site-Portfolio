@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head') %>
+    <title>Samuel Walker - Portfolio</title>
+  </head>
+  <body>
+    <%- include('partials/header') %>
+
+    <h2 class="page-title">Resume / Contact</h2>
+
+    <main class="mx-auto col-12 col-md-8 col-lg-6">
+      <div class="content text-center container my-4">
+        <p>
+          Hello! I’m Samuel Walker, a developer passionate about building
+          projects that make an impact. You can view my resume below to see my
+          skills, experience, and projects.
+        </p>
+        <a
+          href="<%= assetPath %>/resume.pdf"
+          class="btn btn-primary btn-lg"
+          target="_blank"
+          rel="noopener"
+        >
+          View Resume
+        </a>
+      </div>
+    </main>
+
+    <%- include('partials/footer') %>
+  </body>
+</html>
