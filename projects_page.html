@@ -30,8 +30,8 @@
 
     <title>Samuel Walker - Portfolio</title>
   </head>
-<body>
-<!-- 导航栏（链接指向子文件夹的页面） -->
+  <body>
+    <!-- 导航栏（链接指向子文件夹的页面） -->
 <header id="header" class="navbar">
   <div class="container">
     <div class="logo">
@@ -47,9 +47,7 @@
       <ul>
         <li><a href="/index.html">Home</a></li>
         <li><a href="/projects_page.html">Projects</a></li>
-        <!-- 指向projects_page文件夹的index.html -->
-        <li><a href="/resume_page.html">Resume/Contact</a></li>
-        <!-- 指向resume_page文件夹的index.html -->
+        <li><a href="middlewares/public/resume.pdf">Resume</a></li>
         <li>
           <a
             href="https://github.com/Lightning323"
@@ -104,54 +102,280 @@
   });
 </script>
 
- <h2 class="page-title">My Projects</h2>
+    <h1 class="page-title">My Projects</h1>
     <main class="projects-page">
-        <div class="container">
-           
-            <section class="featured-projects">
-                <!-- Xbuilders项目（图片路径向上一级找images） -->
-                <div class="project-card">
-                    <div class="project-image xbuilders-img" style="background-image: url('middlewares/public/images/Xbuilders.jpg');"></div>
-                    <div class="project-content">
-                        <h3>Xbuilders</h3>
-                        <p>Xbuilders is an open-source voxel game built across several generations of development...</p>
-                        <a href="https://github.com/zipCoder933/Xbuilders" target="_blank" rel="noopener" class="btn btn-github"><i class="fab fa-github"></i> View on GitHub</a>
-                    </div>
-                </div>
-                <!-- Cogni-Crawl项目 -->
-                <div class="project-card reverse">
-                    <div class="project-image cogni-crawl-img" style="background-image: url('middlewares/public/images/Cognicrawl.png');"></div>
-                    <div class="project-content">
-                        <h3>Cogni-Crawl</h3>
-                        <p>Cogni Crawl is a flashcard memorization game built in Godot...</p>
-                        <a href="https://github.com/zipCoder933/Cogni-Crawl" target="_blank" rel="noopener" class="btn btn-github"><i class="fab fa-github"></i> View on GitHub</a>
-                    </div>
-                </div>
-                <!-- Pyramid项目 -->
-                <div class="project-card">
-                    <div class="project-image pyramid-img" style="background-image: url('middlewares/public/images/Pyramid game.png');"></div>
-                    <div class="project-content">
-                        <h3>Pyramid of Giza</h3>
-                        <p>This text-based adventure game places you in the role of an explorer...</p>
-                        <a href="https://github.com/zipCoder933/Pyramid-Of-Giza" target="_blank" rel="noopener" class="btn btn-github"><i class="fab fa-github"></i> View on GitHub</a>
-                    </div>
-                </div>
-            </section>
-            <section class="minecraft-mods">
-                <h3 class="section-title">Minecraft Mods</h3>
-                <div class="mods-grid">
-                    <div class="mod-card">
-                        <h4>Thermal Jetpacks</h4>
-                        <p>A jetpack expansion for the Thermal series...</p>
-                        <a href="https://github.com/zipCoder933/Thermal-Jetpacks" target="_blank" rel="noopener" class="btn btn-github small"><i class="fab fa-github"></i> GitHub</a>
-                    </div>
-                    <!-- 其他Mod卡片省略（同之前内容） -->
-                </div>
-            </section>
-        </div>
+      <div class="container">
+        <section class="featured-projects">
+          <div class="project-card">
+            <div
+              class="project-image xbuilders-img"
+              style="
+                background-image: url('middlewares/public/images/Xbuilders.jpg');
+              "
+            ></div>
+            <div class="project-content">
+              <h3>Tessera</h3>
+       <p class="project-description">
+        A comprehensive open-source voxel game developed over several years. Built from the ground up using 
+        <strong>Java</strong> and <strong>LWJGL (OpenGL)</strong>, the project features a custom rendering 
+        pipeline and complex world-generation algorithms.
+    </p>
+
+    <div class="feature-container">
+      Features include:
+        <ul class="feature-list">
+            <li><strong>Systems:</strong> LAN Multiplayer, Day/Night cycles, and Random Tick Events.</li>
+            <li><strong>Lighting:</strong> Real-time Torch and Sun light propagation logic.</li>
+            <li><strong>Physics:</strong> Fire spreading mechanics and falling gravity-affected blocks (Sand/Gravel).</li>
+            <li><strong>Agriculture:</strong> Dynamic crop growth and Amethyst crystal maturation systems.</li>
+            <li><strong>Exploration:</strong> Procedural unique biomes, cave systems, and ore distribution.</li>
+            <li><strong>Transportation:</strong> Functional Minecart rail systems and navigable boats.</li>
+            <li><strong>Fauna:</strong> Diverse entity AI (Dogs, Cats, Foxes, Beavers) with biome-specific spawning.</li>
+            <li><strong>Interactions:</strong> Complex mount mechanics for Horses and Mules requiring saddle items.</li>
+        </ul>
+    </div>
+    
+    <div class="project-footer">
+        <span class="tech-badge">Java</span>
+        <span class="tech-badge">OpenGL</span>
+        <span class="tech-badge">LWJGL</span>
+    </div>
+              <a
+                href="https://github.com/Lightning323/Tessera"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-github"
+                ><i class="fab fa-github"></i> View on GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project-card reverse">
+            <div
+              class="project-image cogni-crawl-img"
+              style="
+                background-image: url('middlewares/public/images/Screenshot 2025-12-31 171511.jpg');
+              "
+            ></div>
+            <div class="project-content">
+              <h3>Cogni-Crawl</h3>
+              <p>
+                Cogni Crawl is a flashcard memorization game built in Godot.
+                This game turns memorization into a monster-hunting adventure.
+                Find your way through a procedurally generated maze, fight
+                enemies, and escape the dungeon!
+                <br />
+                <b>Feed the game any JSON flashcard set you want</b> — With a
+                data driven approach, you can create your own customized
+                flashcard set, upload it to CogniCrawl, and play your facts!
+                <br />
+                The game comes pre-included with Multiplication, Addition,
+                Subtraction and Musical notes
+
+                <!-- CogniCrawl was heavily inspired by TimezAttack. Many of these levels take inspiration from said game. Each dungeon has its own unique look with a unique enemy and boss that you must fight in order to progress and beat the game. -->
+              </p>
+                  <div class="project-footer">
+        <span class="tech-badge">Godot</span>
+        <span class="tech-badge">GDScript</span>
+        <span class="tech-badge">JSON</span>
+    </div>
+              <a
+                href="https://github.com/zipCoder933/Cogni-Crawl"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-github"
+                ><i class="fab fa-github"></i> View on GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div
+              class="project-image cogni-crawl-img"
+              style="
+                background-image: url('middlewares/public/images/calorieCoach.png');
+              "
+            ></div>
+            <div class="project-content">
+              <h3>Calorie Coach</h3>
+              <p>
+                An AI-Powered web application designed to simplify calorie
+                counting! Built on Node.js, Enter what you ate and let AI do the
+                rest!
+              </p>
+              <ul>
+                <li>
+                  Simple food tracking with AI: Leverages the Gemini API to
+                  parse text into individual food entries. Gemini will use
+                  existing entries from the food database, or create new food
+                  entries with estimated nutritional data when no relavant
+                  database matches are found.
+                </li>
+                <li>
+                  Global food database: The app combines disparate data sources
+                  into a unified, user-editable food database. This database is
+                  public and grows with every new food you eat.
+                </li>
+                <li>
+                  Day-by-day tracking: The app records total calories eaten
+                  every day. You can easily view how you accomplished your
+                  calorie goals on a daily and weekly basis.
+                </li>
+              </ul>
+                  <div class="project-footer">
+        <span class="tech-badge">NodeJS</span>
+        <span class="tech-badge">Express</span>
+        <span class="tech-badge">MongoDB</span>
+    </div>
+              <a
+                href="https://github.com/zipCoder933/CalorieCoach"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-github"
+                ><i class="fab fa-github"></i> View on GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project-card reverse">
+            <div
+              class="project-image cogni-crawl-img"
+              style="
+                background-image: url('middlewares/public/images/baconAndBleu.png');
+              "
+            ></div>
+            <div class="project-content">
+              <h3>Bacon & Bleu (Website)</h3>
+              <p>
+                I Designed and coded a website for a local restaurant. The
+                Backend was made using Java EE web framework. The frontend was
+                designed and built by hand, also using Java EE.
+              </p>
+                  <div class="project-footer">
+        <span class="tech-badge">JavaEE</span>
+        <span class="tech-badge">Java</span>
+        <span class="tech-badge">JSP</span>
+    </div>
+              <a
+                href="https://baconandbleu.com/"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-github"
+                ><i class="fa-solid fa-globe"></i> View Website</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div
+              class="project-image pyramid-img"
+              style="
+                background-image: url('middlewares/public/images/Pyramid game.png');
+              "
+            ></div>
+            <div class="project-content">
+              <h3>Pyramid of Giza</h3>
+              <p>
+                This text-based adventure game places you in the role of an
+                explorer. You must navigate through a procedurally generated
+                maze to find all 4 of the entrances to the tomb of the pharaoh.
+                Find them and escape the tomb, or follow the untimely fate of
+                all who have come before you! 
+                
+                <br> The game is built in Python, and
+                includes an extensive handwritten story, with many procedurally
+                generated pathways in between to increase the length of the
+                game!
+              </p>
+                  <div class="project-footer">
+        <span class="tech-badge">Python</span>
+    </div>
+              <a
+                href="https://github.com/zipCoder933/Pyramid-Of-Giza"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-github"
+                ><i class="fab fa-github"></i> View on GitHub</a
+              >
+            </div>
+          </div>
+        </section>
+        <section class="minecraft-mods">
+          <h3 class="section-title">Minecraft Mods</h3>
+          <div class="mods-grid">
+            <div class="mod-card">
+              <h4>Thermal Jetpacks</h4>
+              <p>A jetpack expansion for the Thermal series...</p>
+              <a
+                href="https://github.com/zipCoder933/Thermal-Jetpacks"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-github small"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
+              <a
+                href="https://www.curseforge.com/minecraft/mc-mods/thermal-jetpacks"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-github small"
+                ><i class="fab fa-github"></i> Curseforge</a
+              >
+            </div>
+              <div class="mod-card">
+              <h4>Neutron Tools</h4>
+              <p>A mod to improve your customization of Minecraft Modpacks. Change creative tabs, list all items, blocks, and use other tools and resources.</p>
+              <a
+                href="https://github.com/Lightning323/MC-NeutronTools"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-github small"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
+              <a
+                href="https://www.curseforge.com/minecraft/mc-mods/neutron-tools"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-github small"
+                ><i class="fab fa-github"></i> Curseforge</a
+            </div>
+            </div>
+              <div class="mod-card">
+              <h4>Creative Mode Tweaks</h4>
+              <p>A simple mod that enhances your creative mode experience. The changes include noclip flight (configurable), extended reach distance and disabled flight inertia.</p>
+              <a
+                href="https://github.com/Lightning323/MC-Creative-Mode-Tweaks"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-github small"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
+              <a
+                href="https://www.curseforge.com/minecraft/mc-mods/creative-mode-tweaks"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-github small"
+                ><i class="fab fa-github"></i> Curseforge</a
+            </div>
+            </div>
+              <div class="mod-card">
+              <h4>Cyclic Nexus</h4>
+              <p>Includes New potions and enchantments, new tools and armor, Angel scaffolding (places in mid air), a Night vision helmet and more!</p>
+              <a
+                href="https://github.com/Lightning323/Cyclic-Nexus"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-github small"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
+              <a
+                href=" https://www.curseforge.com/minecraft/mc-mods/cyclic-nexus"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-github small"
+                ><i class="fab fa-github"></i> Curseforge</a
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
-    
     <footer class="footer">
       <div class="container">
         <p>&copy; 2024 Samuel Walker. All rights reserved.</p>
@@ -190,5 +414,5 @@
 
      <!-- Bootstrap JS (optional, for components) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>

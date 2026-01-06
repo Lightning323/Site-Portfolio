@@ -6,6 +6,7 @@
 
 :root {
   --primary: #0773ed;
+  --primary-light: #4b99ff;
   --secondary: #65b891;
   --accent1: #93e5ab;
   --accent2: #b5ffe1;
@@ -13,11 +14,20 @@
   --light: #f8f9fa;
   --gray: #f3f3f3;
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  --transition: all 0.3s ease;
+  --transition: all 0.1s ease;
+  --project-card: #222222;
 }
 
 html {
   height: 100%;
+}
+
+#header{
+  padding-bottom: 0;
+}
+
+.main-nav a.active {
+  color: #0a4da2;
 }
 
 body {
@@ -182,9 +192,7 @@ a:hover {
   position: relative;
 }
 
-.main-nav a.active {
-  color: #0a4da2;
-}
+
 
 .main-nav a::after {
   content: "";
@@ -311,11 +319,22 @@ h2,
   margin-bottom: 4rem;
 }
 
+.project-footer{
+padding:10px;
+}
+.tech-badge{
+background-color: #4b4b4b;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+}
+
 .project-card {
   display: flex;
+  min-height: 300px;
   margin-bottom: 4rem;
-  background-color: #222222;
-  border: 1px solid #333;
+  background-color: var(--project-card);
+  border: 1px solid #8f8f8f;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -325,6 +344,17 @@ h2,
 .project-content p {
   margin-bottom: 1.5rem;
   color: var(--gray);
+}
+
+.project-content h3 {
+  color: var(--primary-light);
+  font-size: 1.8rem;
+}
+
+.project-content h4,
+.project-content h5,
+.project-content h6 {
+  color: white;
 }
 
 .project-card:hover {
@@ -338,7 +368,6 @@ h2,
 
 .project-image {
   width: 50%;
-  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -361,10 +390,7 @@ h2,
   padding: 2rem;
 }
 
-.project-content h3 {
-  color: var(--primary);
-  font-size: 1.8rem;
-}
+
 
 .section-title {
   font-size: 2rem;
@@ -380,7 +406,7 @@ h2,
 }
 
 .mod-card {
-  background-color: #fff;
+  background-color: var(--project-card);
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: var(--shadow);
