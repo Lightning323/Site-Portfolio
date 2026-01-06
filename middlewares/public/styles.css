@@ -359,6 +359,9 @@ background-color: #4b4b4b;
 
 .project-card:hover {
   transform: translateY(-5px);
+  /* border: 1px solid var(--primary);
+   */
+   /* background-color: #2e2e2e; */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
