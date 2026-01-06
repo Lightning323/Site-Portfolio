@@ -3,7 +3,7 @@ const fs = require('fs');
 
 console.log('Building...');
 
-assetPath = '/middlewares/public';
+assetPath = 'middlewares/public';
 
 const views = [
     { src: './middlewares/views/index.ejs', dest: './index.html' },
